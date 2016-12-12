@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Wakey</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="images/icon.png"/>  
+	<meta name="apple-mobile-web-app-capable" content="yes" />  
+
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+
+<div data-role="page">
+	<div data-role="panel" id="left-panel" data-theme="a">
+		<ul data-theme="a" data-role="listview">
+		<li data-icon="delete" data-theme="a"><a href="#" data-rel="back">Back</a></li>
+			<li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Close</a></li>
+			<li data-icon="info"><a href="#popInfo" data-rel="popup" data-position-to="window" data-inset="true" data-theme="a" data-transition="pop">Whats Wakey</a></li>
+			<div data-role="popup" id="popInfo" data-theme="a" class="ui-corner-all">
+				<h2><blockquote>Wakey is being developed as a personal project to
+				explore Javascript, JQuery, PHP, MySql and CSS.<p></blockquote></h2>
+			</div>
+			<li data-icon="home" data-theme="a"><a href="login.html">Login</a></li>
+			<div data-role="collapsible-set"  data-inset="true" data-theme="a">
+				<div data-role="collapsible">
+					<h2>Pick a City</h2>
+					<ul data-theme="a" data-role="listview" data-filter="true">
+					<li ><a href="#" class="city" data-rel="close">Current Location</a></li>
+					<li ><a href="#" class="city" data-rel="close">Buffalo</a></li>	
+					<li ><a href="#" class="city" data-rel="close">Chennai</a></li>				
+					<li ><a href="#" class="city" data-rel="close">Chicago</a></li>
+					<li ><a href="#" class="city" data-rel="close">Los Angeles</a></li>
+					<li ><a href="#" class="city" data-rel="close">Miami</a></li>
+					<li ><a href="#" class="city" data-rel="close">Mumbai</a></li>
+					<li ><a href="#" class="city" data-rel="close">New York</a></li>
+					<li ><a href="#" class="city" data-rel="close">San Diego</a></li>
+					<li ><a href="#" class="city" data-rel="close">San Francisco</a></li>
+					<li ><a href="#" class="city" data-rel="close">Salt Lake City</a></li>
+					<li ><a href="#" class="city" data-rel="close">Seattle</a></li>
+					</ul>
+				</div>
+			</div>
+		</ul>
+	</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<h1>Wakey</h1>
+		<a href="#left-panel" data-icon="bars" data-role="button"  data-iconpos="notext" data-iconshadow="false">Menu</a>
+	</div>
+	<div data-role="content" class="content">			
+		<form action="register.php" method="post">
+			<label for="username">Username <font size=1>&#40;Atleast 4 characters - A-Z,a-z,0-9,'_','-','@'&#41;</font></label>
+			<input type="text" name="username" id="username" value="">
+			<label for="pwd">Password <font size=1>&#40;Atleast 8 characters - A-Z,a-z,0-9,'_','-','@'&#41;</font></label>
+			<input type="text" name="pwd" id="pwd" value="">
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email" value="">
+			
+			<input type="submit" name = "submit" value="Register">
+		</form>
+	</div>
+</div>
+ 
+
+</body>
+
+</html>

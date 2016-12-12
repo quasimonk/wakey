@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('meteocons-webfont.eot');
+    src: url('meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('meteocons-webfont.woff') format('woff'),
+         url('meteocons-webfont.ttf') format('truetype'),
+         url('meteocons-webfont.svg#MeteoconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+}
+
+#current_temp {
+	font-size: 4em;
+}
+
+#current_summary {
+	font-size: 1.5em;
+}
+
+.wicon {
+  width: 4ex;
+  height: 4ex;
+  display: inline-block;
+  background: #000000 url("wicons/01d.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  font-size: 4em;
+}
+
+.content {
+	text-align: center;
+	background: #000000 url("rain3.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #f2f2f2;
+	height: 100vh;
+	width: 100vw;
+}
+.forecast {
+	text-align: left;
+  padding-left: 90px;
+  padding-top: 20px;
+  list-style-type: none !important;
+  color: #f2f2f2;
+}
