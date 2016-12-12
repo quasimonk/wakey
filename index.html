@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Wakey</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="images/icon.png"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/scripting.js"> </script>
+</head>
+
+<body>
+
+<div data-role="page">
+	<div data-role="panel" id="left-panel" data-theme="a">
+		<ul data-theme="a" data-role="listview">
+			<li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Close</a></li>
+			<li data-icon="info"><a href="#popInfo" data-rel="popup" data-position-to="window" data-inset="true" data-theme="a" data-transition="pop">Whats Wakey</a></li>
+			<div data-role="popup" id="popInfo" data-theme="a" class="ui-corner-all">
+				<h2><blockquote>Wakey is being developed as a personal project to
+				explore Javascript, JQuery, PHP, MySql and CSS.<p></blockquote></h2>
+			</div>
+			<li data-icon="home" data-theme="a"><a href="register.html">Register</a></li>
+			<li data-icon="home" data-theme="a"><a href="login.html">Login</a></li>
+			<div data-role="collapsible-set"  data-inset="true" data-theme="a">
+				<div data-role="collapsible">
+					<h2>Pick a City</h2>
+					<ul data-theme="a" data-role="listview" data-filter="true">
+					<li ><a href="#" class="city" data-rel="close">Current Location</a></li>
+					<li ><a href="#" class="city" data-rel="close">Buffalo</a></li>
+					<li ><a href="#" class="city" data-rel="close">Chicago</a></li>
+					<li ><a href="#" class="city" data-rel="close">Los Angeles</a></li>
+					<li ><a href="#" class="city" data-rel="close">Miami</a></li>
+					<li ><a href="#" class="city" data-rel="close">New York</a></li>
+					<li ><a href="#" class="city" data-rel="close">San Diego</a></li>
+					<li ><a href="#" class="city" data-rel="close">San Francisco</a></li>
+					<li ><a href="#" class="city" data-rel="close">Salt Lake City</a></li>
+					<li ><a href="#" class="city" data-rel="close">Seattle</a></li>
+					</ul>
+				</div>
+			</div>
+			<div><input name="search-1" id="search-1" value="Or Search for one" type="search"></div>
+		</ul>
+	</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<h1>Wakey</h1>
+		<a href="#left-panel" data-icon="bars" data-role="button"  data-iconpos="notext" data-iconshadow="false">Menu</a>
+	</div>
+	<div data-role="content" class="content">
+			<!--h1 id="current_temp"  > 65&#176;F</h1-->
+			<h1 id="current_temp" >
+				<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F
+			</h1>
+			<p id="current_summary">Partly Cloudy</p>
+			<p id="location" style="color:white;">7.00 PM, Current Location</p>
+				<ul class="forecast">
+					<li id="forecast1">
+						<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F Partly Cloudy 10.00PM
+					</li>
+					<li id="forecast2">
+						<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F
+					</li>
+					<li id="forecast3">
+						<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F
+					</li>
+					<li id="forecast4">
+						<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F
+					</li>
+					<li id="forecast5">
+						<img style="vertical-align:middle" src="css/wicons/01d.png" height=10% width=10%/>65&#176;F
+					</li>
+				</ul>
+	</div>
+</div>
+
+
+</body>
+
+</html>
